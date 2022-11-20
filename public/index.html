@@ -1,0 +1,76 @@
+<!-- <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Chat App With Socket Io</title>
+  </head>
+  <body>
+    <h1>Socket Io</h1>
+
+    <form id="msgForm">
+      <div class="inputBox">
+        <input type="text" name="sender" />
+        <input type="text" name="msg" />
+      </div>
+      <button class="sendBtn">Send</button>
+    </form>
+
+    <div id="messages"></div> -->
+
+<!-- Socket Io Client side Script  -->
+<!--     
+    <script
+      src="https://cdn.socket.io/4.5.3/socket.io.min.js"
+      integrity="sha384-WPFUvHkB1aHA5TDSZi6xtDgkF0wXJcIIxXhC6h8OT8EH3fC5PWro5pWJ1THjcfEi"
+      crossorigin="anonymous"
+    ></script>
+    <script src="connect.js"></script>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Chat App with WebSocket</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <!-- Title Text  -->
+
+        <div class="title">
+          <h1>Stacodev Chat App</h1>
+        </div>
+
+        <!-- Chat Window  -->
+
+        <div class="chatWindow" id="chatIO">
+          <h2 class="chatTitle">Stacodev Chat</h2>
+          <div id="chatWindow">
+            <div id="outPut"></div>
+            <div id="feedback"></div>
+          </div>
+          <input type="text" name="" id="sender" placeholder="Sender" />
+          <input type="text" name="" id="message" placeholder="Message" />
+          <button id="sendMessageBtn">Send</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Socket Io Client side Script  -->
+    <script
+      src="https://cdn.socket.io/4.5.3/socket.io.min.js"
+      integrity="sha384-WPFUvHkB1aHA5TDSZi6xtDgkF0wXJcIIxXhC6h8OT8EH3fC5PWro5pWJ1THjcfEi"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Custom JS Code Script File  -->
+    <script src="connect.js"></script>
+  </body>
+</html>
